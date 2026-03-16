@@ -1,0 +1,37 @@
+# ══════════════════════════════════════════════
+# SNTM SAP — robots.txt
+# Domaine : https://sntm-sap.fr
+# Structure : css/ · js/ · images/
+# ══════════════════════════════════════════════
+
+# ── Tous les robots ──────────────────────────
+User-agent: *
+Allow: /
+Allow: /images/
+Disallow: /css/
+Disallow: /js/
+
+# ── Googlebot ────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Allow: /images/
+Disallow: /css/
+Disallow: /js/
+
+# ── Googlebot Images — indexation photos ─────
+User-agent: Googlebot-Image
+Allow: /images/
+
+# ── Bingbot ──────────────────────────────────
+User-agent: Bingbot
+Allow: /
+Allow: /images/
+Disallow: /css/
+Disallow: /js/
+
+# ── Crawl-delay robots généralistes ──────────
+User-agent: *
+Crawl-delay: 10
+
+# ── Sitemap ──────────────────────────────────
+Sitemap: https://sntm-sap.fr/sitemap.xml
