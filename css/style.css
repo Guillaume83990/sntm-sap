@@ -1154,3 +1154,28 @@ textarea {
     letter-spacing: 0.06em;
     color: #ffffff
 }
+
+/* ══ HERO IMAGE DIRECTE (remplace background CSS pour LCP optimal) ══ */
+.hero-bg {
+    position: relative;
+    overflow: hidden
+}
+
+.hero-img-direct {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0
+}
+
+.hero-overlay {
+    z-index: 1
+}
+
+.hero-grain {
+    z-index: 2
+}
