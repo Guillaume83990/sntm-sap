@@ -57,7 +57,10 @@
     <link rel="preload" href="fonts/cormorant-garamond-v21-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/dm-sans-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/dm-sans-v17-latin-500.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" as="image" href="images/services-hero-nettoyage.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="images/services-hero-nettoyage-1200.webp" fetchpriority="high"
+        media="(min-width:769px)">
+    <link rel="preload" as="image" href="images/services-hero-nettoyage-768.webp" fetchpriority="high"
+        media="(max-width:768px)">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
@@ -255,7 +258,10 @@
 
         <!-- PAGE HERO — H1 avec "nettoyage saint-tropez" -->
         <header class="page-hero" aria-label="Services nettoyage professionnel Saint-Tropez SNTM SAP">
-            <div class="page-hero-bg" style="background-image:url('images/services-hero-nettoyage.webp')"></div>
+            <img src="images/services-hero-nettoyage-1200.webp" srcset="images/services-hero-nettoyage-768.webp 768w,
+                images/services-hero-nettoyage-1200.webp 1200w" sizes="100vw"
+                alt="Services nettoyage professionnel Saint-Tropez — SNTM SAP" class="page-hero-img-direct" width="1200"
+                height="800" loading="eager" fetchpriority="high" decoding="sync">
             <div class="page-hero-overlay"></div>
             <div class="page-hero-noise"></div>
             <div class="page-hero-logo-mark" aria-hidden="true">
@@ -321,7 +327,7 @@
                 <!-- 01 — LOCAUX -->
                 <div class="service-block" id="locaux">
                     <div class="service-block-img">
-                        <img src="images/nettoyage locaux professionnels.webp"
+                        <img src="images/nettoyage locaux professionnels-700.webp"
                             alt="Nettoyage locaux professionnels bureaux Saint-Tropez Var — SNTM SAP" loading="lazy"
                             width="700" height="500">
                         <span class="service-block-img-num">01</span>
@@ -347,7 +353,7 @@
                 <!-- 02 — COMMERCES -->
                 <div class="service-block reverse" id="commerce">
                     <div class="service-block-img">
-                        <img src="images/nettoyage commerce.webp"
+                        <img src="images/nettoyage commerce-700.webp"
                             alt="Nettoyage commerces boutiques vitrines Saint-Tropez — entreprise SNTM SAP"
                             loading="lazy" width="700" height="500">
                         <span class="service-block-img-num">02</span>
@@ -372,7 +378,7 @@
                 <!-- 03 — VILLAS -->
                 <div class="service-block" id="villas">
                     <div class="service-block-img">
-                        <img src="images/nettoyage vitres homme.webp"
+                        <img src="images/nettoyage vitres homme-700.webp"
                             alt="Nettoyage villas résidences prestige Saint-Tropez Ramatuelle Golfe" loading="lazy"
                             width="700" height="500">
                         <span class="service-block-img-num">03</span>
@@ -398,7 +404,7 @@
                 <!-- 04 — VITRINES -->
                 <div class="service-block reverse" id="vitrines">
                     <div class="service-block-img">
-                        <img src="images/nettoyage-vitrines.webp"
+                        <img src="images/nettoyage-vitrines-700.webp"
                             alt="Nettoyage vitrines professionnelles façades boutiques Saint-Tropez Var" loading="lazy"
                             width="700" height="500">
                         <span class="service-block-img-num">04</span>
@@ -423,7 +429,7 @@
                 <!-- 05 — ÉCOLES -->
                 <div class="service-block" id="ecoles">
                     <div class="service-block-img">
-                        <img src="images/nettoyage classe.webp"
+                        <img src="images/nettoyage classe-700.webp"
                             alt="Nettoyage établissements scolaires écoles collectivités Saint-Tropez Var 83"
                             loading="lazy" width="700" height="500">
                         <span class="service-block-img-num">05</span>
