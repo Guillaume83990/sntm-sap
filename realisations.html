@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon & PWA -->
     <link rel="icon" type="image/x-icon" href="images/favicon (2).ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <meta name="theme-color" content="#e60012">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- TITLE — 59 chars, mots-clés photos + localisation -->
     <title>Réalisations Nettoyage Saint-Tropez – SNTM SAP | Photos & Galerie</title>
@@ -56,6 +57,7 @@
     <link rel="preload" href="fonts/cormorant-garamond-v21-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/dm-sans-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/dm-sans-v17-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" href="images/realisations-hero.webp" fetchpriority="high">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
@@ -155,7 +157,7 @@
         <div class="nav-inner">
             <a href="index.html" class="nav-logo" aria-label="SNTM SAP - Nettoyage Saint-Tropez - Accueil">
                 <img src="images/logo SNTM sans fond.webp" alt="SNTM SAP nettoyage professionnel Saint-Tropez"
-                    class="nav-logo-img" width="120" height="52">
+                    class="nav-logo-img" width="120" height="52" fetchpriority="low">
             </a>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Accueil</a></li>
@@ -187,7 +189,7 @@
     <div class="mobile-overlay" id="mobileOverlay"></div>
     <div class="mobile-menu" id="mobileMenu">
         <div class="mobile-menu-logo">
-            <img src="images/logo SNTM sans fond.webp" alt="SNTM SAP" width="120" height="52">
+            <img src="images/logo SNTM sans fond.webp" alt="SNTM SAP" width="120" height="52" loading="lazy">
         </div>
         <a href="tel:+33600000000" class="mobile-menu-tel">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -214,7 +216,7 @@
             <div class="page-hero-overlay"></div>
             <div class="page-hero-noise"></div>
             <div class="page-hero-logo-mark" aria-hidden="true">
-                <img src="images/logo SNTM sans fond.webp" alt="" width="200" height="86">
+                <img src="images/logo SNTM sans fond.webp" alt="" width="200" height="86" loading="lazy">
             </div>
             <div class="container page-hero-content">
                 <nav class="breadcrumb" aria-label="Fil d'Ariane">
@@ -596,8 +598,8 @@
 
     <script
         type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'fr', includedLanguages: 'en,fr', autoDisplay: false }, 'google_translate_element'); }</script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
-    <script src="js/script.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
