@@ -57,7 +57,10 @@
     <link rel="preload" href="fonts/cormorant-garamond-v21-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/dm-sans-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/dm-sans-v17-latin-500.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" as="image" href="images/realisations-hero.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="images/realisations-hero-1200.webp" fetchpriority="high"
+        media="(min-width:769px)">
+    <link rel="preload" as="image" href="images/realisations-hero-768.webp" fetchpriority="high"
+        media="(max-width:768px)">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
@@ -212,7 +215,10 @@
 
         <!-- PAGE HERO — H1 avec mots-clés -->
         <header class="page-hero" aria-label="Galerie réalisations nettoyage Saint-Tropez SNTM SAP">
-            <div class="page-hero-bg" style="background-image:url('images/realisations-hero.webp')"></div>
+            <img src="images/realisations-hero-1200.webp" srcset="images/realisations-hero-768.webp 768w,
+                images/realisations-hero-1200.webp 1200w" sizes="100vw"
+                alt="Réalisations nettoyage professionnel Saint-Tropez — SNTM SAP" class="page-hero-img-direct"
+                width="1200" height="800" loading="eager" fetchpriority="high" decoding="sync">
             <div class="page-hero-overlay"></div>
             <div class="page-hero-noise"></div>
             <div class="page-hero-logo-mark" aria-hidden="true">
@@ -343,7 +349,7 @@
 
                     <!-- Locaux -->
                     <div class="gallery-item tall" data-cat="locaux" data-reveal data-d="1">
-                        <img src="images/nettoyage-locaux-pro.webp"
+                        <img src="images/nettoyage-locaux-pro-600.webp"
                             alt="Nettoyage complet locaux professionnels Saint-Tropez — bureaux et espaces communs"
                             loading="lazy" width="600" height="800">
                         <div class="gallery-caption">
@@ -355,7 +361,7 @@
                     </div>
 
                     <div class="gallery-item" data-cat="locaux" data-reveal data-d="2">
-                        <img src="images/nettoyage-bureaux.webp"
+                        <img src="images/nettoyage-bureaux-600.webp"
                             alt="Nettoyage bureaux open-space professionnel Grimaud Var" loading="lazy" width="600"
                             height="400">
                         <div class="gallery-caption">
@@ -367,7 +373,7 @@
                     </div>
 
                     <div class="gallery-item" data-cat="locaux" data-reveal data-d="3">
-                        <img src="images/nettoyage classe.webp"
+                        <img src="images/nettoyage classe-600.webp"
                             alt="Entretien établissement scolaire nettoyage classe Saint-Tropez" loading="lazy"
                             width="600" height="400">
                         <div class="gallery-caption">
@@ -379,7 +385,7 @@
                     </div>
 
                     <div class="gallery-item" data-cat="locaux" data-reveal data-d="1">
-                        <img src="images/produits-nettoyage-pro.webp"
+                        <img src="images/produits-nettoyage-pro-600.webp"
                             alt="Produits nettoyage professionnel éco-certifiés SNTM SAP Var" loading="lazy" width="600"
                             height="400">
                         <div class="gallery-caption">
@@ -392,7 +398,7 @@
 
                     <!-- Vitrines -->
                     <div class="gallery-item" data-cat="vitrines" data-reveal data-d="1">
-                        <img src="images/nettoyage-vitrines.webp"
+                        <img src="images/nettoyage-vitrines-600.webp"
                             alt="Nettoyage vitrines façades boutique Saint-Tropez — résultat impeccable" loading="lazy"
                             width="600" height="400">
                         <div class="gallery-caption">
@@ -404,7 +410,7 @@
                     </div>
 
                     <div class="gallery-item" data-cat="vitrines" data-reveal data-d="2">
-                        <img src="images/nettoyage vitres homme.webp"
+                        <img src="images/nettoyage vitres homme-600.webp"
                             alt="Nettoyage vitres commerce boutique professionnel Saint-Tropez" loading="lazy"
                             width="600" height="400">
                         <div class="gallery-caption">
@@ -416,7 +422,7 @@
                     </div>
 
                     <div class="gallery-item" data-cat="vitrines locaux" data-reveal data-d="3">
-                        <img src="images/nettoyage commerce.webp"
+                        <img src="images/nettoyage commerce-600.webp"
                             alt="Nettoyage surface de vente commerce Saint-Tropez Cogolin Var" loading="lazy"
                             width="600" height="400">
                         <div class="gallery-caption">
@@ -429,7 +435,7 @@
 
                     <!-- Sols -->
                     <div class="gallery-item tall" data-cat="sols" data-reveal data-d="1">
-                        <img src="images/sols-renovation.webp"
+                        <img src="images/sols-renovation-600.webp"
                             alt="Rénovation sol marbre pierre naturelle ponçage Saint-Tropez Ramatuelle Var"
                             loading="lazy" width="600" height="800">
                         <div class="gallery-caption">
@@ -442,7 +448,7 @@
 
                     <!-- Après travaux -->
                     <div class="gallery-item" data-cat="apres-travaux" data-reveal data-d="1">
-                        <img src="images/nettoyage-apres-travaux.webp"
+                        <img src="images/nettoyage-apres-travaux-600.webp"
                             alt="Nettoyage après travaux chantier remise en état Sainte-Maxime Var" loading="lazy"
                             width="600" height="400">
                         <div class="gallery-caption">
