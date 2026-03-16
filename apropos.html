@@ -57,7 +57,10 @@
     <link rel="preload" href="fonts/cormorant-garamond-v21-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/dm-sans-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/dm-sans-v17-latin-500.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" as="image" href="images/hero-image-apropos.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="images/hero-image-apropos-1200.webp" fetchpriority="high"
+        media="(min-width:769px)">
+    <link rel="preload" as="image" href="images/hero-image-apropos-768.webp" fetchpriority="high"
+        media="(max-width:768px)">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
@@ -195,7 +198,10 @@
 
         <!-- PAGE HERO — H1 avec mot-clé principal -->
         <header class="page-hero" aria-label="À propos SNTM SAP entreprise nettoyage Saint-Tropez">
-            <div class="page-hero-bg" style="background-image:url('images/hero-image-apropos.webp')"></div>
+            <img src="images/hero-image-apropos-1200.webp" srcset="images/hero-image-apropos-768.webp 768w,
+                images/hero-image-apropos-1200.webp 1200w" sizes="100vw"
+                alt="Saint-Tropez vue panoramique — SNTM SAP entreprise nettoyage" class="page-hero-img-direct"
+                width="1200" height="797" loading="eager" fetchpriority="high" decoding="sync">
             <div class="page-hero-overlay"></div>
             <div class="page-hero-noise"></div>
             <div class="page-hero-logo-mark" aria-hidden="true">
@@ -225,11 +231,12 @@
                 <div class="about-story-grid">
                     <div class="about-story-imgs" data-reveal>
                         <div class="as-img-main">
-                            <img src="images/équipe SNTM.webp"
+                            <img src="images/équipe SNTM-800.webp"
                                 alt="Équipe SNTM SAP entreprise nettoyage professionnel Saint-Tropez" loading="lazy">
                         </div>
                         <div class="as-img-sec">
-                            <img src="images/image st tropez.webp" alt="Saint-Tropez village Golfe Var" loading="lazy">
+                            <img src="images/image st tropez-800.webp" alt="Saint-Tropez village Golfe Var"
+                                loading="lazy">
                         </div>
                         <div class="as-badge"><strong>25+</strong><span>Ans d'expérience</span></div>
                     </div>
